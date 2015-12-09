@@ -5,6 +5,7 @@
   <head>
 
     <title>201 Final Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   </head>
 
@@ -30,16 +31,16 @@
     <div id="form">
       <form id="entryForm" action="" method="post">
 
-        <p>Are you in imminent danger?
-          <label>Yes<input type="radio" name="danger" class="danger" value="Yes" /></label>
-          <label>No<input type="radio" name="danger" class="danger" value="No" /></label></p>
+        <p id="inDanger">Are you in imminent danger?
+          <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
+          <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
 
         <p>Name:
-          <input type="text" name="name" />
+          <input type="text" name="name" id="nameInput" />
         </p>
 
         <p>Zipcode:
-          <input type="number" name="zipcode" />
+          <input type="number" name="zipcode" id="zipCode" />
         </p>
 
         <p>Do you have children?
@@ -48,12 +49,12 @@
         </p>
 
         <p># of Children:
-          <input type="number" name="numberKids" />
+          <input type="number" name="numberKids" id= "number" />
         </p>
 
         <p>Are you in need of medical care?
-         <label>Yes<input type="radio" name="medical" class="care" value="Yes" /></label>
-         <label>No<input type="radio" name="medical" class="care" value="No" /></label>
+         <label>Yes<input type="radio" name="medical" id="yesCare" value="Yes" /></label>
+         <label>No<input type="radio" name="medical" id="noCare" value="No" /></label>
         </p>
 
         <p>Would you like to speak with one of our substance abuse counselors?
