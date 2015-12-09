@@ -1,6 +1,7 @@
 //Global Scope Variables.
-var clientName = $("#nameInput");
-var zipcode = $("zipCode");
+var firstName = $("#firstName");
+var lastName = $("#lastName");
+var address = $("zipCode");
 var numberOfKids = Number($("numberKids"));
 var info = $("textArea");
 
