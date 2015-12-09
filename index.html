@@ -11,83 +11,101 @@
 
   <body>
 
-    <div id="heading">
-      <h1>Emergency Shelter for Women & Children</h1>
-    </div>
+    <wrapper>
 
-    <div id="missionStatement">
-      <p>We provide emergency shelter for women and children. <br /> We offer support on a case by case basis and our guests can expect:</p>
-      <ul>
-        <li>a safe place to sleep</li>
-        <li>warm, nutritional food</li>
-        <li>community resources</li>
-        <li>clothes washing</li>
-        <li>warm shower</li>
-        <li>crisis counseling</li>
-      </ul>
-      <p>Our emergency shelter is an entry point to a more wholistic community outreach. We keep our guest's information confidential.<br />Our guests can expect to sleep in a secured environment.</p>
-    </div>
+      <div id="heading">
+        <h1>Emergency Shelter for Women & Children</h1>
+      </div>
 
-    <div id="form">
-      <form id="entryForm" action="" method="post">
+      <div id="missionStatement">
+        <p>We provide emergency shelter for women and children. <br /> We offer support on a case by case basis and our guests can expect:</p>
+        <ul>
+          <li>a safe place to sleep</li>
+          <li>warm, nutritional food</li>
+          <li>community resources</li>
+          <li>clothes washing</li>
+          <li>warm shower</li>
+          <li>crisis counseling</li>
+        </ul>
+        <p>Our emergency shelter is an entry point to a more wholistic community outreach. We keep our guest's information confidential.<br />Our guests can expect to sleep in a secured environment.</p>
+      </div>
 
-        <p id="inDanger">Are you in imminent danger?
-          <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
-          <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
+      <div id="form">
+        <form id="entryForm" action="" method="post">
 
-        <div>
-          <p>
-            First Name:
-            <input type="text" name="name" id="firstName" />
-            Last Name:
-            <input type="text" name="name" id="lastName" />
-          </p>
-        </div>
+          <p id="inDanger">Are you in imminent danger?
+            <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
+            <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
 
-        <div>
-          <label>Last Known Address:
+            <section>
+              Date:
+              <input type="date" name="date" id="date" />
+            </section>
+
+          <section>
             <p>
-              Adress 1:
-              <input type="text" name="address1" id="address1" />
-              Adress 2:
-              <input type="text" name="address2" id="address2" />
-              City:
-              <input type="text" name="city" id="city" />
-              State:
-              <input type="text" name="state" id="state" />
-              Zipcode:
-              <input type="number" name="homeAddress" id="homeAddress" />
+              First Name:
+              <input type="text" name="name" id="firstName" />
+              Last Name:
+              <input type="text" name="name" id="lastName" />
             </p>
-          </label>
-        </div>
+          </section>
 
-        <p id="children">Do you have children?
-         <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
-         <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
-        </p>
+          <section>
+            <label>Last Known Address:
+              <p>
+                Adress 1:
+                <input type="text" name="address1" id="address1" />
+                Adress 2:
+                <input type="text" name="address2" id="address2" />
+                City:
+                <input type="text" name="city" id="city" />
+                State:
+                <input type="text" name="state" id="state" />
+                Zipcode:
+                <input type="number" name="zipcode" id="zipcode" />
+              </p>
+            </label>
+          </section>
 
-        <p># of Children:
-          <input type="number" name="numberKids" id= "numberKids" />
-        </p>
+          <section>
+            <p id="children">Do you have children?
+             <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
+             <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
+            </p>
 
-        <p id="medicalAid">Are you in need of medical care?
-         <label>Yes<input type="radio" name="medical" id="yesCare" value="Yes" /></label>
-         <label>No<input type="radio" name="medical" id="noCare" value="No" /></label>
-        </p>
+            <p># of Children:
+              <input type="number" name="numberKids" id= "numberKids" />
+            </p>
+          </section>
 
-        <p>Would you like to speak with one of our substance abuse counselors?
-         <label>Yes<input type="radio" name="substance" id="yesAbuse" value="Yes" /></label>
-         <label>No<input type="radio" name="substance" id="noAbuse" value="No" /></label>
-        </p>
+          <section>
+            <p id="medicalAid">Are you in need of medical care?
+             <label>Yes<input type="radio" name="medical" id="yesCare" value="Yes" /></label>
+             <label>No<input type="radio" name="medical" id="noCare" value="No" /></label>
+            </p>
+          </section>
 
-        <label>What brings you to the emergency shelter?</label><textarea id="textArea"></textarea>
+          <section>
+            <p>Would you like to speak with one of our substance abuse counselors?
+             <label>Yes<input type="radio" name="substance" id="yesAbuse" value="Yes" /></label>
+             <label>No<input type="radio" name="substance" id="noAbuse" value="No" /></label>
+            </p>
+          </section>
 
-      </form>
-    </div>
+          <section>
+            <label>What brings you to the emergency shelter?</label><textarea id="textArea"></textarea>
+          </section>
 
-    <input type="submit" id="onSubmit" name="submit" value="Submit" />
+        </form>
+      </div>
 
-    <script src="shelter.js"></script>
+      <input type="submit" id="onSubmit" name="submit" value="Submit" />
+
+      <script src="shelter.js"></script>
+
+    </wrapper>
+
   </body>
 
 </html>
