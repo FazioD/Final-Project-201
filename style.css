@@ -1,0 +1,15 @@
+section {
+  border: solid black 1px;
+}
+
+#childNames {
+  list-style: none;
+}
+
+section {
+  display: block;
+}
+
+fieldset {
+  style: none;
+}

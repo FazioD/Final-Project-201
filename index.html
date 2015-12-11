@@ -4,8 +4,9 @@
 
   <head>
 
-    <title>201 Final Project</title>
+    <title>Rachel's Place</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
 
@@ -14,7 +15,8 @@
     <wrapper>
 
       <div id="heading">
-        <h1>Emergency Shelter for Women & Children</h1>
+        <h1>Welcome to Rachel's Place</h1>
+        <h2>Emergency Shelter for Women & Children</h2>
       </div>
 
       <div id="missionStatement">
@@ -33,27 +35,36 @@
       <div id="form">
         <form id="entryForm" action="" method="post">
 
-          <p id="inDanger">Are you in imminent danger?
-            <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
-            <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
-
-            <section>
-              Date:
-              <input type="date" name="date" id="date" />
-            </section>
-
           <section>
-            <p>
-              First Name:
-              <input type="text" name="name" id="firstName" />
-              Last Name:
-              <input type="text" name="name" id="lastName" />
+            <p>Date:
+              <input type="date" name="date" id="date" />
             </p>
           </section>
 
+          <section id="inDanger">
+            <p>Are you in imminent danger?
+              <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
+              <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
+              <p id="alert"></p>
+          </section>
+
+          <section >
+            <fieldset>
+              <legend>Full Name:</legend>
+              First:
+              <input type="text" name="name" id="firstName" />
+              Last:
+              <input type="text" name="name" id="lastName" />
+              Middle:
+              <input type="text" name="name" id="middle" />
+              Maiden:
+              <input type="text" name="name" id="maiden" />
+            </fieldset>
+          </section>
+
           <section>
-            <label>Last Known Address:
-              <p>
+            <fieldset>
+            <legend>Last Known Address:</legend>
                 Adress 1:
                 <input type="text" name="address1" id="address1" />
                 Adress 2:
@@ -64,19 +75,42 @@
                 <input type="text" name="state" id="state" />
                 Zipcode:
                 <input type="number" name="zipcode" id="zipcode" />
-              </p>
             </label>
+          </fieldset>
           </section>
 
           <section>
-            <p id="children">Do you have children?
-             <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
-             <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
-            </p>
-
-            <p># of Children:
-              <input type="number" name="numberKids" id= "numberKids" />
-            </p>
+            <fieldset>
+              <legend>Children:</legend>
+               <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
+               <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
+              <p># of Children:
+                <input type="number" name="numberKids" id= "numberKids" />
+              </p>
+              <section>
+                <fieldset>
+                <legend>Names:</legend>
+                  <ul id="childNames">
+                    <li>
+                      <input type="radio" name="childNames" id="firstChild" value="First Child" />
+                      </label>First</label>
+                        <input type="name" name="first" class="firstName" />
+                      </label>Last</label>
+                        <input type="name" name="last" class="lastNames" />
+                    </li>
+                      <li><input type="radio" name="childNames" id="firstChild" value="Additional Child" />
+                      </label>First</label>
+                        <input type="name" name="first" class="firstNames" />
+                      </label>Last</label>
+                        <input type="name" name="last" class="lastNames" />
+                    </li>
+                  </ul>
+                  <input type="submit" id="onSubmit" name="submit" value="Add Child" />
+                  <input type="submit" id="onSubmit" name=" submit" value="Remove Child" />
+                </p>
+              </fieldset>
+              </section>
+            </fieldset>
           </section>
 
           <section>
