@@ -44,8 +44,8 @@
         </p>
 
         <p>Do you have children?
-         <label>Yes<input type="radio" name="children" class="kids" value="Yes" /></label>
-         <label>No<input type="radio" name="children" class="kids" value="No" /></label>
+         <label>Yes<input type="radio" name="children" id="kids" value="Yes" /></label>
+         <label>No<input type="radio" name="children" id="kids" value="No" /></label>
         </p>
 
         <p># of Children:
@@ -62,7 +62,9 @@
          <label>No<input type="radio" name="substance" class="abuse" value="No" /></label>
         </p>
 
-        <label>What brings you to the emergency shelter?</label><textarea></textarea>
+        <label>What brings you to the emergency shelter?<input type ="text" name="shelter" id="response"></label><textarea></textarea>
+
+        <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
 
       </form>
     </div>

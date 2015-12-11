@@ -1,0 +1,20 @@
+
+//css//
+button {
+  color: #6699ff;
+  background-color: #ccffff;
+  border-color: #BFB999;
+  font-family:'Arial', sans-serif;
+  font-weight: bold;
+  padding-top: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#add-new-submit:hover {
+ cursor: pointer;
+}
+.highlight:hover{
+  background-color: #BFB999;
+  color: #000D0C;
+}

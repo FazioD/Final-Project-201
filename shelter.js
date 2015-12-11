@@ -13,3 +13,14 @@ $(document).ready(function() {
 
 //RADIO BUTTONS for Do you have children.
 
+
+//form fields//
+var children = $("#kids");
+var shelter = $("#response");
+
+//event listener//
+var newSubmitButton = document.getElementById("add-new-submit");
+newShopButton.addEventListener("click", handelSubmit);
+
+
+
