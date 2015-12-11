@@ -1,11 +1,13 @@
 body {
 	width: 960px;
 	margin: 0 auto;
-	background-color: #;
+	background-color: #B1BEA4;
+	font-family: 'Nixie One', cursive;
+	font: #282828;
 }
 
 section {
-  border: gray 1px;
+  border: #B1BEA4 1px;
 }
 
 #childNames {
@@ -14,16 +16,17 @@ section {
 
 section {
   display: block;
+
 }
 
 fieldset {
-  style: none;
-  background-color: #B7BDC4;
+  background-color: #CED59F;
 }
 
 h1 {
 	text-align: center;
-	color: #FF765E;
+	color: #282828;
+	
 }
 
 blockquote {
@@ -34,11 +37,7 @@ blockquote {
 	font-family: Georgia, Times, serif;
 	margin: 0px 0px 10px 10px;
 	padding: 10px;
-	background-color: #B7BDC4;
+	color: #647168;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
-}
-
-{
-
 }
