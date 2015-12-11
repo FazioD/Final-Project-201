@@ -42,7 +42,7 @@
           </section>
 
           <section id="inDanger">
-            <p>Are you in imminent danger?
+            <p>Is the client in imminent danger?
               <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
               <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
               <p id="alert"></p>
@@ -84,9 +84,6 @@
               <legend>Children:</legend>
                <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
                <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
-              <p># of Children:
-                <input type="number" name="numberKids" id= "numberKids" />
-              </p>
               <section>
                 <fieldset>
                 <legend>Names:</legend>
@@ -94,7 +91,7 @@
                     <li>
                       <input type="radio" name="childNames" id="firstChild" value="First Child" />
                       </label>First</label>
-                        <input type="name" name="first" class="firstName" />
+                        <input type="name" name="first" class="firstNames" />
                       </label>Last</label>
                         <input type="name" name="last" class="lastNames" />
                     </li>
@@ -105,9 +102,10 @@
                         <input type="name" name="last" class="lastNames" />
                     </li>
                   </ul>
-                  <input type="submit" id="onSubmit" name="submit" value="Add Child" />
-                  <input type="submit" id="onSubmit" name=" submit" value="Remove Child" />
-                </p>
+                  <input type="submit" id="" name="submit" value="Add Child" />
+                  <input type="submit" id="" name="submit" value="Remove Child" />
+                  <label>Total Children:</label>
+                    <input type="text" id="" name="totalKids" />
               </fieldset>
               </section>
             </fieldset>
@@ -134,7 +132,7 @@
         </form>
       </div>
 
-      <input type="submit" id="onSubmit" name="submit" value="Submit" />
+      <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
 
       <script src="shelter.js"></script>
 
