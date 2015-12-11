@@ -1,5 +1,11 @@
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #;
+}
+
 section {
-  border: solid black 1px;
+  border: gray 1px;
 }
 
 #childNames {
@@ -12,4 +18,27 @@ section {
 
 fieldset {
   style: none;
+  background-color: #B7BDC4;
+}
+
+h1 {
+	text-align: center;
+	color: #FF765E;
+}
+
+blockquote {
+	float: right;
+	width: 275px;
+	font-size: 130%;
+	font-style: italic;
+	font-family: Georgia, Times, serif;
+	margin: 0px 0px 10px 10px;
+	padding: 10px;
+	background-color: #B7BDC4;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+{
+
 }
