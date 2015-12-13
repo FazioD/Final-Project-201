@@ -57,7 +57,12 @@ $(function() {
   $("#kids [type=radio]").click(function() {
     if (children) {
       $("#hiddenKids").css("display", "inline");
-    } else {
+    }
+  });
+});
+$(function() {
+  $("#kids [type=radio]").click(function() {
+    if (children === false) {
       $("#hiddenKids").css("display", "none");
     }
   });
