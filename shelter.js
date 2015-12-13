@@ -90,6 +90,7 @@ var newSubmitButton = document.getElementById("add-new-submit");
 newShopButton.addEventListener("click", handelSubmit);
 
 
+<<<<<<< HEAD
 //$(function() {
 //this replaces document.ready
 //})
@@ -97,3 +98,5 @@ newShopButton.addEventListener("click", handelSubmit);
 //write a function that takes argument like elements collecting info
 //second argument what is done with the info, or specify info
 //call function with jquery variables as parameters for arguments
+=======
+>>>>>>> 736710096b72eb3a9902f641479a1ab90e86194f
