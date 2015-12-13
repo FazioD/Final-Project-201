@@ -23,15 +23,17 @@ var medicalCare;
 //SUBSTANCE ABUSE SECTION
 var substanceAbuse;
 //ADDITIONAL INFORMATION
-var info = $("textArea");
+var info = $("#textArea");
 
 //Radio Button for finding out if the client is in danger.
 $(document).ready(function() {
   $("#yesDanger").click(function() {
     inDanger = true;
+    console.log("Client is in danger, call 911");
     $("#alert").html("Call 911");
   });
   $("#noDanger").click(function() {
+    console.log("Client is not in immediate danger.");
     inDanger = false;
   });
 });
@@ -51,6 +53,9 @@ $(document).ready(function() {
     children = false;
   });
 });
+
+if ()
+//INCLUDE ADDING NEW CHILDREN FUNCTION HERE.
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(document).ready(function() {
