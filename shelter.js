@@ -57,6 +57,8 @@ $(function() {
   $("#kids [type=radio]").click(function() {
     if (children) {
       $("#hiddenKids").css("display", "inline");
+    } else {
+      $("#hiddenKids").css("display", "none");
     }
   });
 });
@@ -89,11 +91,8 @@ $(function() {
 var newSubmitButton = document.getElementById("add-new-submit");
 newShopButton.addEventListener("click", handelSubmit);
 
-
-
 //$(function() {
 //this replaces document.ready
-//})
 
 //write a function that takes argument like elements collecting info
 //second argument what is done with the info, or specify info
