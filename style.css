@@ -21,11 +21,6 @@ section {
   list-style: none;
 }
 
-section {
-  display: block;
-
-}
-
 fieldset {
   background-color: #CED59F;
   width: 500px;
@@ -73,7 +68,7 @@ blockquote {
 	color: #647168;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
-
+}
 
 a {
 	padding-bottom: 20px;
@@ -91,8 +86,7 @@ input {
 
 #hiddenKids {
   display: none;
-  width: 400px;
-
+}
 #firstName {
 	padding:5px 5px 5px 30px;
 	width: 245px;
