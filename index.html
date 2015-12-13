@@ -52,14 +52,10 @@
           <section >
             <fieldset>
               <legend>Full Name:</legend>
-              First:
-              <input type="text" name="name" id="firstName" />
-              Last:
-              <input type="text" name="name" id="lastName" />
-              Middle:
-              <input type="text" name="name" id="middle" />
-              Maiden:
-              <input type="text" name="name" id="maiden" />
+              <p><label class="field" for="First">First: <input type="text" name="name" id="firstName" /><label></p>
+              <p><label class="field" for="Last">Last: <input type="text" name="name" id="lastName" /></label></p>
+              <p><label class="field" for="Middle">Middle: <input type="text" name="name" id="middle" /></label></p>
+              <p><label class="field" for="Maiden">Maiden: <input type="text" name="name" id="maiden" /></label></p>
             </fieldset>
           </section>
 
@@ -85,7 +81,7 @@
                <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
               <section>
 
-                <fieldset>
+                <fieldset id="children">
                 <legend>Names:</legend>
                   <ul id="childNames">
                     <li>
