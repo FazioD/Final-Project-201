@@ -89,6 +89,10 @@ input {
   display: inline-block;
 }
 
+
+#hiddenKids {
+  display: none;
+
 #firstName {
 	padding:5px 5px 5px 30px;
 	width: 245px;
@@ -137,4 +141,5 @@ input {
 
 #date {
 	padding:5px 5px 5px 30px;
+
 }
