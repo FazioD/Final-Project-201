@@ -1,5 +1,19 @@
+section {
+  border: solid black 1px;
+}
 
-//css//
+#childNames {
+  list-style: none;
+}
+
+section {
+  display: block;
+}
+
+fieldset {
+  style: none;
+}
+
 button {
   color: #6699ff;
   background-color: #ccffff;
@@ -13,8 +27,15 @@ button {
 }
 #add-new-submit:hover {
  cursor: pointer;
+ transform: rotateX(360deg);
 }
 .highlight:hover{
   background-color: #BFB999;
   color: #000D0C;
+}
+
+//Layout//
+p {
+  text-align: center;
+  
 }
