@@ -36,6 +36,11 @@ h1 {
 	color: #282828;	
 }
 
+footer {
+	text-align: center;
+	
+}
+
 button {
   color: #6699ff;
   background-color: #ccffff;
@@ -70,5 +75,3 @@ blockquote {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 }
-
->>>>>>> master
