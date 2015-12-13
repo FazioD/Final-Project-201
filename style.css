@@ -38,7 +38,6 @@ h1 {
 
 footer {
 	text-align: center;
-	
 }
 
 button {
@@ -81,10 +80,6 @@ a {
 	color: blue;
 }
 
-#children {
-  width: 450px;
-}
-
 legend {
   font-size: 20px;
 }
@@ -96,6 +91,7 @@ input {
 
 #hiddenKids {
   display: none;
+  width: 400px;
 
 #firstName {
 	padding:5px 5px 5px 30px;

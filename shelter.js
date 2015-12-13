@@ -62,14 +62,6 @@ $(function() {
     }
   });
 });
-//IF USER CLICKS NO, HIDE SECTION
-// $(function() {
-//   $("#kids [type=radio]").click(function() {
-//     if (children === false) {
-//       $("#hiddenKids").css("display", "none");
-//     }
-//   });
-// });
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(function() {
@@ -99,11 +91,8 @@ $(function() {
 var newSubmitButton = document.getElementById("add-new-submit");
 newShopButton.addEventListener("click", handelSubmit);
 
-
-
 //$(function() {
 //this replaces document.ready
-//})
 
 //write a function that takes argument like elements collecting info
 //second argument what is done with the info, or specify info
