@@ -32,19 +32,19 @@ $(document).ready(function() {
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(document).ready(function() {
   $("#yesCare").click(function() {
-    alert("Call 911");
+    alert("If it's an emergency let us help you contact 911. Otherwise please list your health concerns in the comments section below.");
   });
   $("#noCare").click(function() {
-    alert("Don't Call 911");
+    alert("That's great!");
   });
 });
 
 //RADIO BUTTONS for the ? "Would you like to speak with one of our..."
 $(document).ready(function() {
   $("#yesAbuse").click(function() {
-    alert("Call 911");
+    alert("Someone will be here to speak with you shortly.");
   });
   $("#noAbuse").click(function() {
-    alert("Don't Call 911");
+    alert("OK");
   });
 });

@@ -4,6 +4,14 @@ body {
 	background-color: #B1BEA4;
 	font-family: 'Nixie One', cursive;
 	font: #282828;
+	
+}
+
+figure {
+	background-image: url("treesmountains.jpeg");
+	padding-top: ;
+	text-align: center;
+	 
 }
 
 section {
@@ -26,6 +34,7 @@ fieldset {
 h1 {
 	text-align: center;
 	color: #282828;
+	
 	
 }
 
