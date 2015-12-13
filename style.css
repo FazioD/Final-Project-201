@@ -1,11 +1,21 @@
 body {
 	width: 960px;
 	margin: 0 auto;
-	background-color: #;
+	background-color: #B1BEA4;
+	font-family: 'Nixie One', cursive;
+	font: #282828;
+	
+}
+
+figure {
+	background-image: url("treesmountains.jpeg");
+	padding-top: ;
+	text-align: center;
+	 
 }
 
 section {
-  border: gray 1px;
+  border: #B1BEA4 1px;
 }
 
 #childNames {
@@ -14,16 +24,16 @@ section {
 
 section {
   display: block;
+
 }
 
 fieldset {
-  style: none;
-  background-color: #B7BDC4;
+  background-color: #CED59F;
 }
 
 h1 {
 	text-align: center;
-	color: #FF765E;
+	color: #282828;	
 }
 
 button {
@@ -37,10 +47,12 @@ button {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 #add-new-submit:hover {
  cursor: pointer;
  transform: rotateX(360deg);
 }
+
 .highlight:hover{
   background-color: #BFB999;
   color: #000D0C;
@@ -54,7 +66,7 @@ blockquote {
 	font-family: Georgia, Times, serif;
 	margin: 0px 0px 10px 10px;
 	padding: 10px;
-	background-color: #B7BDC4;
+	color: #647168;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 }

@@ -60,18 +60,21 @@ if ()
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(document).ready(function() {
   $("#yesCare").click(function() {
+
     console.log("Client needs medical care.");
     medicalCare = true;
   });
   $("#noCare").click(function() {
     console.log("Client does not need medical care.");
     medicalCare = false;
+
   });
 });
 
 //RADIO BUTTONS for the ? "Would you like to speak with one of our..."
 $(document).ready(function() {
   $("#yesAbuse").click(function() {
+
     console.log("Client is seeking assistance with substance abuse.");
     substanceAbuse = true;
   });
