@@ -57,9 +57,19 @@ $(function() {
   $("#kids [type=radio]").click(function() {
     if (children) {
       $("#hiddenKids").css("display", "inline");
+    } else {
+      $("#hiddenKids").css("display", "none");
     }
   });
 });
+//IF USER CLICKS NO, HIDE SECTION
+// $(function() {
+//   $("#kids [type=radio]").click(function() {
+//     if (children === false) {
+//       $("#hiddenKids").css("display", "none");
+//     }
+//   });
+// });
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(function() {
