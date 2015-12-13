@@ -16,6 +16,68 @@
 
   <body>
 
+    <div id="heading">
+      <h1>Emergency Shelter for Women & Children</h1>
+    </div>
+
+    <div id="missionStatement">
+      <p>We provide emergency shelter for women and children. <br /> We offer support on a case by case basis and our guests can expect:</p>
+      <ul>
+        <li>a safe place to sleep</li>
+        <li>warm, nutritional food</li>
+        <li>community resources</li>
+        <li>clothes washing</li>
+        <li>warm shower</li>
+        <li>crisis counseling</li>
+      </ul>
+      <p>Our emergency shelter is an entry point to a more wholistic community outreach. We keep our guest's information confidential.<br />Our guests can expect to sleep in a secured environment.</p>
+    </div>
+
+    <div id="form">
+      <form id="entryForm" action="" method="post">
+
+        <p id="inDanger">Are you in imminent danger?
+          <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
+          <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
+
+        <p>Name:
+          <input type="text" name="name" id="nameInput" />
+        </p>
+
+        <p>Zipcode:
+          <input type="number" name="zipcode" id="zipCode" />
+        </p>
+
+        <p>Do you have children?
+         <label>Yes<input type="radio" name="children" id="kids" value="Yes" /></label>
+         <label>No<input type="radio" name="children" id="kids" value="No" /></label>
+        </p>
+
+        <p># of Children:
+          <input type="number" name="numberKids" id= "number" />
+        </p>
+
+        <p>Are you in need of medical care?
+         <label>Yes<input type="radio" name="medical" id="yesCare" value="Yes" /></label>
+         <label>No<input type="radio" name="medical" id="noCare" value="No" /></label>
+        </p>
+
+        <p>Would you like to speak with one of our substance abuse counselors?
+         <label>Yes<input type="radio" name="substance" class="abuse" value="Yes" /></label>
+         <label>No<input type="radio" name="substance" class="abuse" value="No" /></label>
+        </p>
+
+        <label>What brings you to the emergency shelter?<input type ="text" name="shelter" id="response"></label><textarea></textarea>
+
+        <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
+
+      </form>
+    </div>
+
+    <input type="submit" id="onSubmit" name="submit" value="Submit" />
+
+    <script src="shelter.js"></script>
+
     <wrapper>
 
       <div id="heading">
@@ -144,8 +206,18 @@
       <script src="shelter.js"></script>
 
     </wrapper>
+
     
   </div>
+
+<footer>
+  <p>Rachel's place</p>
+  <p> 1038 Beacon Ave Seattle WA,98134</p>
+  <p>Contact information: <a href="mailto:@example.com">
+  Admin@rachelscplace.com</a></p>
+</footer>
+
+
   </body>
 
 
