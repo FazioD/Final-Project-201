@@ -10,7 +10,6 @@ figure {
 	background-image: url("treesmountains.jpeg");
 	padding-top: ;
 	text-align: center;
-
 }
 
 section {
@@ -125,7 +124,6 @@ input {
 
 #city {
 	padding:5px 5px 5px 30px;
-	float:;
 	width: 250px;
 }
 
@@ -141,5 +139,5 @@ input {
 
 #date {
 	padding:5px 5px 5px 30px;
-
+	width: 200;
 }
