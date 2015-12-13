@@ -54,6 +54,7 @@ $(document).ready(function() {
   });
 });
 
+if ()
 //INCLUDE ADDING NEW CHILDREN FUNCTION HERE.
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
