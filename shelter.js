@@ -88,3 +88,4 @@ $(document).ready(function() {
 var newSubmitButton = document.getElementById("add-new-submit");
 newShopButton.addEventListener("click", handelSubmit);
 
+
