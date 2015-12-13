@@ -33,9 +33,29 @@ fieldset {
 
 h1 {
 	text-align: center;
-	color: #282828;
-	
-	
+	color: #282828;	
+}
+
+button {
+  color: #6699ff;
+  background-color: #ccffff;
+  border-color: #BFB999;
+  font-family:'Arial', sans-serif;
+  font-weight: bold;
+  padding-top: 8px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#add-new-submit:hover {
+ cursor: pointer;
+ transform: rotateX(360deg);
+}
+
+.highlight:hover{
+  background-color: #BFB999;
+  color: #000D0C;
 }
 
 blockquote {
@@ -50,3 +70,4 @@ blockquote {
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
 }
+

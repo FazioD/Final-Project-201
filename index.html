@@ -24,7 +24,7 @@
         <h1>Welcome to Rachel's Place Seattle<br />Emergency Shelter for Women & Children</h1>
         <figure>
         <blockquote>"There is some good in this world, and it's worth fighting for." -J.R.R. Tolkien</blockquote>
-       
+
       </div>
 
       <div id="missionStatement">
@@ -50,7 +50,7 @@
           </section>
 
           <section id="inDanger">
-            <p>Are you in imminent danger?
+            <p>Is the client in imminent danger?
               <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
               <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
               <p id="alert"></p>
@@ -73,18 +73,13 @@
           <section>
             <fieldset>
             <legend>Last Known Address:</legend>
-                Adress 1:
-                <input type="text" name="address1" id="address1" />
-                Adress 2:
-                <input type="text" name="address2" id="address2" />
-                City:
-                <input type="text" name="city" id="city" />
-                State:
-                <input type="text" name="state" id="state" /> 
-                <br />Zipcode:
-                <input type="number" name="zipcode" id="zipcode" />
-                Email: 
-                <input type="text" name="email" id="email" />
+
+                <p><label class="field" for="Address1">Address 1: <input type="text" name="address1" id="address1" /></label></p>
+                <p><label class="field" for="Address2">Address 2: <input type="text" name="address2" id="address2" /></label></p>
+                <p><label class="field" for="City">City: <input type="text" name="city" id="city" /></label></p>
+                <p><label class="field" for="State">State: <input type="text" name="state" id="state" /></label></p>
+                <p><label class="field" for="Zipcode">Zipcode: <input type="number" name="zipcode" id="zipcode" /></label></p>
+
             </label>
           </fieldset>
           </section>
@@ -95,9 +90,6 @@
               <legend>Children:</legend>
                <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
                <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
-              <p># of Children:
-                <input type="number" name="numberKids" id= "numberKids" />
-              </p>
               <section>
 
                 <fieldset>
@@ -106,7 +98,7 @@
                     <li>
                       <input type="radio" name="childNames" id="firstChild" value="First Child" />
                       </label>First</label>
-                        <input type="name" name="first" class="firstName" />
+                        <input type="name" name="first" class="firstNames" />
                       </label>Last</label>
                         <input type="name" name="last" class="lastNames" />
                     </li>
@@ -117,9 +109,10 @@
                         <input type="name" name="last" class="lastNames" />
                     </li>
                   </ul>
-                  <input type="submit" id="onSubmit" name="submit" value="Add Child" />
-                  <input type="submit" id="onSubmit" name=" submit" value="Remove Child" />
-                </p>
+                  <input type="submit" id="" name="submit" value="Add Child" />
+                  <input type="submit" id="" name="submit" value="Remove Child" />
+                  <label>Total Children:</label>
+                    <input type="text" id="" name="totalKids" />
               </fieldset>
               </section>
             </fieldset>
@@ -146,7 +139,7 @@
         </form>
       </div>
 
-      <input type="submit" id="onSubmit" name="submit" value="Submit" />
+      <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
 
       <script src="shelter.js"></script>
 

@@ -1,51 +1,90 @@
 //Global Scope Variables.
+//DATE.
+var savedDate = $("#date");
+//IN DANGER.
+var inDanger;
+//NAME SECTION.
 var firstName = $("#firstName");
 var lastName = $("#lastName");
-var address = $("zipCode");
-var numberOfKids = Number($("numberKids"));
-var info = $("textArea");
+var middleName = $("#middle");
+var maidenName = $("#maiden");
+//ADDRESS SECTION.
+var address1 = $("#address1");
+var address2 = $("#address2");
+var city = $("#city");
+var state = $("#state");
+var address = Number($("#zipCode"));
+//CHILDREN SECTION.
+var children;
+var childsFirst = $(".firstNames");
+var childsSecond = $(".lastNames");
+//MEDICAL CARE
+var medicalCare;
+//SUBSTANCE ABUSE SECTION
+var substanceAbuse;
+//ADDITIONAL INFORMATION
+var info = $("#textArea");
 
-//Radio Button for yes danger.
+//Radio Button for finding out if the client is in danger.
 $(document).ready(function() {
   $("#yesDanger").click(function() {
+    inDanger = true;
+    console.log("Client is in danger, call 911");
     $("#alert").html("Call 911");
   });
   $("#noDanger").click(function() {
-    document.write("Don't Call 911");
+    console.log("Client is not in immediate danger.");
+    inDanger = false;
   });
 });
 
-//INPUTS INTO POSSIBLE BACK END DATABASES
+//Inputs for Full Name Section in HTML is at this location.
 
-//RADIO BUTTONS for Do you have children.
+//Input for Last Known Address in HTML is at this location.
+
+//RADIO BUTTONS for children section.
 $(document).ready(function() {
   $("#yesKids").click(function() {
-    alert("Call 911");
+    console.log("Client has children.");
+    children = true;
   });
   $("#noKids").click(function() {
-    alert("Don't Call 911");
+    console.log("Client doesn not have children.");
+    children = false;
   });
 });
 
-//INPUT for HOW MANY CHILDREN.
+if ()
+//INCLUDE ADDING NEW CHILDREN FUNCTION HERE.
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(document).ready(function() {
   $("#yesCare").click(function() {
-    alert("If it's an emergency let us help you contact 911. Otherwise please list your health concerns in the comments section below.");
+
+    console.log("Client needs medical care.");
+    medicalCare = true;
   });
   $("#noCare").click(function() {
-    alert("That's great!");
+    console.log("Client does not need medical care.");
+    medicalCare = false;
+
   });
 });
 
 //RADIO BUTTONS for the ? "Would you like to speak with one of our..."
 $(document).ready(function() {
   $("#yesAbuse").click(function() {
-    alert("Someone will be here to speak with you shortly.");
+
+    console.log("Client is seeking assistance with substance abuse.");
+    substanceAbuse = true;
   });
   $("#noAbuse").click(function() {
-    alert("OK");
+    alert("Client does not need assistance with substance abuse.");
+    substanceAbuse = false;
   });
 });
+
+//Submit Button Event Listener
+var newSubmitButton = document.getElementById("add-new-submit");
+newShopButton.addEventListener("click", handelSubmit);
 
