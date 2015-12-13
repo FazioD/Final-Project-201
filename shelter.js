@@ -57,6 +57,16 @@ $(function() {
   $("#kids [type=radio]").click(function() {
     if (children) {
       $("#hiddenKids").css("display", "inline");
+    } else {
+
+    }
+  });
+});
+//IF USER CLICKS NO, HIDE SECTION
+$(function() {
+  $("#kids [type=radio]").click(function() {
+    if (children === false) {
+      $("#hiddenKids").css("display", "none");
     }
   });
 });
