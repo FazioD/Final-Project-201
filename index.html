@@ -76,23 +76,16 @@
 
           <section>
 
-            <fieldset>
+            <fieldset id="kids">
               <legend>Children:</legend>
                <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
                <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
               <section>
-
-                <fieldset id="children">
+                <fieldset id="hiddenKids">
                 <legend>Names:</legend>
                   <ul id="childNames">
                     <li>
-                      <input type="radio" name="childNames" id="firstChild" value="First Child" />
-                      </label>First</label>
-                        <input type="name" name="first" class="firstNames" />
-                      </label>Last</label>
-                        <input type="name" name="last" class="lastNames" />
-                    </li>
-                      <li><input type="radio" name="childNames" id="firstChild" value="Additional Child" />
+                      <input type="checkbox" name="childNames" id="firstChild" value="First Child" />
                       </label>First</label>
                         <input type="name" name="first" class="firstNames" />
                       </label>Last</label>
@@ -101,8 +94,6 @@
                   </ul>
                   <input type="submit" id="" name="submit" value="Add Child" />
                   <input type="submit" id="" name="submit" value="Remove Child" />
-                  <label>Total Children:</label>
-                    <input type="text" id="" name="totalKids" />
               </fieldset>
               </section>
             </fieldset>

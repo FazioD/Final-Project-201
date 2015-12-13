@@ -2,7 +2,7 @@
 //DATE.
 var savedDate = $("#date");
 //IN DANGER.
-var inDanger;
+var inDanger = false;
 //NAME SECTION.
 var firstName = $("#firstName");
 var lastName = $("#lastName");
@@ -15,13 +15,13 @@ var city = $("#city");
 var state = $("#state");
 var address = Number($("#zipCode"));
 //CHILDREN SECTION.
-var children;
+var children = false;
 var childsFirst = $(".firstNames");
 var childsSecond = $(".lastNames");
 //MEDICAL CARE
-var medicalCare;
+var medicalCare = false;
 //SUBSTANCE ABUSE SECTION
-var substanceAbuse;
+var substanceAbuse = false;
 //ADDITIONAL INFORMATION
 var info = $("#textArea");
 
@@ -39,7 +39,6 @@ $(document).ready(function() {
 });
 
 //Inputs for Full Name Section in HTML is at this location.
-
 //Input for Last Known Address in HTML is at this location.
 
 //RADIO BUTTONS for children section.
@@ -53,21 +52,20 @@ $(document).ready(function() {
     children = false;
   });
 });
-
-if ()
 //INCLUDE ADDING NEW CHILDREN FUNCTION HERE.
+if (children) {
+  alert("test");
+}
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
 $(document).ready(function() {
   $("#yesCare").click(function() {
-
     console.log("Client needs medical care.");
     medicalCare = true;
   });
   $("#noCare").click(function() {
     console.log("Client does not need medical care.");
     medicalCare = false;
-
   });
 });
 
