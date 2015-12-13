@@ -4,14 +4,13 @@ body {
 	background-color: #B1BEA4;
 	font-family: 'Nixie One', cursive;
 	font: #282828;
-	
 }
 
 figure {
 	background-image: url("treesmountains.jpeg");
 	padding-top: ;
 	text-align: center;
-	 
+
 }
 
 section {
@@ -29,11 +28,12 @@ section {
 
 fieldset {
   background-color: #CED59F;
+  width: 500px;
 }
 
 h1 {
 	text-align: center;
-	color: #282828;	
+	color: #282828;
 }
 
 button {
@@ -71,7 +71,22 @@ blockquote {
 	border-bottom: 1px solid gray;
 }
 
+<<<<<<< HEAD
 a {
 	padding-bottom: 20px;
 	color: blue;
 }
+=======
+#children {
+  width: 450px;
+}
+
+legend {
+  font-size: 20px;
+}
+
+input {
+  display: inline-block;
+}
+
+>>>>>>> 01dab5d2545ea2419d4ee513dc4be2204733939b
