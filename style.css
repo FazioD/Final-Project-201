@@ -83,3 +83,6 @@ input {
   display: inline-block;
 }
 
+#hiddenKids {
+  display: none;
+}

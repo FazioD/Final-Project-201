@@ -26,7 +26,7 @@ var substanceAbuse = false;
 var info = $("#textArea");
 
 //Radio Button for finding out if the client is in danger.
-$(document).ready(function() {
+$(function() {
   $("#yesDanger").click(function() {
     inDanger = true;
     console.log("Client is in danger, call 911");
@@ -42,7 +42,7 @@ $(document).ready(function() {
 //Input for Last Known Address in HTML is at this location.
 
 //RADIO BUTTONS for children section.
-$(document).ready(function() {
+$(function() {
   $("#yesKids").click(function() {
     console.log("Client has children.");
     children = true;
@@ -53,12 +53,16 @@ $(document).ready(function() {
   });
 });
 //INCLUDE ADDING NEW CHILDREN FUNCTION HERE.
-if (children) {
-  alert("test");
-}
+$(function() {
+  $("#kids [type=radio]").click(function() {
+    if (children) {
+      $("#hiddenKids").css("display", "inline");
+    }
+  });
+});
 
 //RADIO BUTTONS for the "Are you in need of medical assistance."
-$(document).ready(function() {
+$(function() {
   $("#yesCare").click(function() {
     console.log("Client needs medical care.");
     medicalCare = true;
@@ -70,14 +74,13 @@ $(document).ready(function() {
 });
 
 //RADIO BUTTONS for the ? "Would you like to speak with one of our..."
-$(document).ready(function() {
+$(function() {
   $("#yesAbuse").click(function() {
-
     console.log("Client is seeking assistance with substance abuse.");
     substanceAbuse = true;
   });
   $("#noAbuse").click(function() {
-    alert("Client does not need assistance with substance abuse.");
+    console.log("Client does not need assistance with substance abuse.");
     substanceAbuse = false;
   });
 });
@@ -86,3 +89,11 @@ $(document).ready(function() {
 var newSubmitButton = document.getElementById("add-new-submit");
 newShopButton.addEventListener("click", handelSubmit);
 
+
+//$(function() {
+//this replaces document.ready
+//})
+
+//write a function that takes argument like elements collecting info
+//second argument what is done with the info, or specify info
+//call function with jquery variables as parameters for arguments
