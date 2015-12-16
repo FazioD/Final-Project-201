@@ -66,18 +66,19 @@ $(function() {
     }
   });
 });
-
+var x = 0;
+//Writes new data and input forms.
 $(document).ready(function() {
     var max_fields = 10; //maximum input boxes allowed
     var wrapper = $(".input_fields_wrap"); //Fields wrapper
     var add_button = $(".add_field_button"); //Add button ID
 
-    var x = 1; //initlal text box count
+    x = 1; //initlal text box count
     $(add_button).click(function(e) { //on add input button click
         e.preventDefault();
         if (x < max_fields) { //max input box allowed
             x++; //text box increment
-            $(wrapper).append("<div><label>First: </label><input type='text' name='mytext[]'><label>Last: </label><input type='text' name='mytext[]'><a href='#' class='remove_field'>Remove</a></div>"); //add input box
+            $(wrapper).append("<div id='kids'><label >First: </label><input type='text' class='childFirstName' name='mytext[]'><label>Last: </label><input type='text'  class='childLastName' name='mytext[]'><a href='#' class='remove_field'> x</a></div>"); //add input box
         }
     });
 
@@ -85,13 +86,31 @@ $(document).ready(function() {
         e.preventDefault(); $(this).parent('div').remove(); x--;
     });
 });
-
+//add button create new class - grab class - iterate through array.
 //Adding event listener to submit children to childArray.
-// $(function() {
-//   $("#addChild").click(function() {
-//     childArray.push
-//   });
-// });
+$(function() {
+  $("#addChild").on("click", function(e) {
+    e.preventDefault();
+
+    var childFirstName = $(".childFirstName");
+    console.log(childFirstName.length);
+    //childFirstName.forEach(function(x) {console.log(x)})
+    var childLastName = $(".childLastName");
+    //open for loop
+    console.log('CHILDFIRSTNAME', childFirstName);
+
+    for (var i = 0; i < childFirstName.length; i++) {
+      var firstName = childFirstName[i].value;
+      var lastName = childLastName[i].value;
+      var childFullName = firstName + " " + lastName;
+      childArray.push(childFullName);
+    }
+
+
+    console.log(childArray);
+  });
+});
+
 // ***************END CHILDREN SECTION***************** //
 
 //RADIO BUTTONS for "Are you in need of medical assistance."
@@ -118,6 +137,6 @@ $(function() {
   });
 });
 
-//Submit Button Event Listener
-var newSubmitButton = document.getElementById("add-new-submit");
-newShopButton.addEventListener("click", handelSubmit);
+// //Submit Button Event Listener
+// var newSubmitButton = document.getElementById("add-new-submit");
+// newShopButton.addEventListener("click", handelSubmit);
