@@ -8,17 +8,14 @@
     <title>Rachel's Place</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-
   </head>
 
       <div id="heading">
         <figure>
           <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmIGHHj0jmZzNDustRh4o850fhHUZauJjmFpuaZXq-gUNg7oyb9w" alt= "Washington scenery"/>
-
         <h1>Welcome to Rachel's Place<br />Emergency Shelter for Women & Children</h1>
-        <figure>
+        </sfigure>
         <blockquote>"There is some good in this world, and it's worth fighting for." -J.R.R. Tolkien</blockquote>
-
       </div>
 
       <div id="missionStatement">
@@ -38,80 +35,94 @@
         <form id="entryForm" method="post">
 
           <section>
+            <!-- DATE SECTION -->
             <p>Date:
               <input type="date" name="date" id="date" />
             </p>
+            <!-- DATE ENDS -->
           </section>
 
           <section id="inDanger">
+            <!-- DANGER BUTTONS -->
             <p>Is the client in imminent danger?
               <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
               <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
               <p id="alert"></p>
+              <!-- END DANGER BUTTONS -->
           </section>
 
           <section >
+            <!-- NAME INPUT AREA -->
             <fieldset>
               <legend>Full Name:</legend>
               <p><label class="field" for="First">First: <input type="text" name="name" id="firstName" /><label></p>
               <p><label class="field" for="Last">Last: <input type="text" name="name" id="lastName" /></label></p>
               <p><label class="field" for="Middle">Middle: <input type="text" name="name" id="middle" /></label></p>
               <p><label class="field" for="Maiden">Maiden: <input type="text" name="name" id="maiden" /></label></p>
+              <!-- END NAME AREA -->
             </fieldset>
           </section>
 
           <section>
+            <!-- ADDRESS AREA -->
             <fieldset>
             <legend>Last Known Address:</legend>
-
                 <p><label class="field" for="Address1">Address 1: <input type="text" name="address1" id="address1" /></label></p>
                 <p><label class="field" for="Address2">Address 2:<input type="text" name="address2" id="address2" /></label></p>
                 <p><label class="field" for="City">City: <input type="text" name="city" id="city" /></label></p>
                 <p><label class="field" for="State">State: <input type="text" name="state" id="state" /></label></p>
                 <p><label class="field" for="Zipcode">Zipcode: <input type="number" name="zipcode" id="zipcode" /></label></p>
-
-            </label>
-          </fieldset>
+            </fieldset>
+            <!-- END ADDRESS AREA -->
           </section>
 
           <section>
+            <!-- CHILDREN AREA -->
             <fieldset>
-              <section id="kids">
-                <legend>Children:</legend>
+              <legend>Children:</legend>
+
+                <section id="kids">
+                  <!-- CHILDREN RADIO BUTTONS -->
                  <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
                  <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
-             </section>
-              <section id="hiddenKids">
-                <fieldset>
-                  <legend>Names:</legend>
-                    <ul id="childNames">
-                      <li>
-                        <input type="checkbox" name="childNames" id="firstChild" value="First Child" />
-                        </label>First</label>
-                          <input type="name" name="first" class="firstNames" />
-                        </label>Last</label>
-                          <input type="name" name="last" class="lastNames" />
-                      </li>
-                    </ul>
-                    <input type="submit" id="" name="submit" value="Add Child" />
-                    <input type="submit" id="" name="submit" value="Remove Child" />
-                </fieldset>
+                 <!-- RADIO BUTTON END -->
+                </section>
+
+                <section id="hiddenKids">
+                  <!-- ****CHILDREN NAME AREA**** -->
+                  <fieldset>
+                    <legend>Names:</legend>
+                    <div class="input_fields_wrap">
+                      <button class="add_field_button">Add Child</button>
+                      <div>
+                        <label>First: </label><input class="childName" type="text" name="mytext[]">
+                        <label>Last: </label><input class="childName" type="text" name="mytext[]">
+                      </div>
+                    </div>
+                     <input type="submit" id="addChild" name="submit" value="Submit" />
+                  </fieldset>
+                  <!-- ****END CHILD NAME AREA**** -->
               </section>
             </fieldset>
+            <!-- END CHILDREN AREA -->
           </section>
 
           <section>
+            <!-- MEDICAL SECTION -->
             <p id="medicalAid">Are you in need of medical care?
-             <label>Yes<input type="radio" name="medical" id="yesCare" value="Yes" /></label>
-             <label>No<input type="radio" name="medical" id="noCare" value="No" /></label>
+             <label>Yes<input type="radio" name="medical" class="medicalCare" value="Yes" /></label>
+             <label>No<input type="radio" name="medical" class="medicalCare" value="No" /></label>
             </p>
+            <!-- END MEDICAL SECTION -->
           </section>
 
           <section>
+            <!-- SUBSTANCE ABUSE SECTION -->
             <p>Would you like to speak with one of our substance abuse counselors?
-             <label>Yes<input type="radio" name="substance" id="yesAbuse" value="Yes" /></label>
-             <label>No<input type="radio" name="substance" id="noAbuse" value="No" /></label>
+             <label>Yes<input type="radio" name="substance" class="substanceAbuse" value="Yes" /></label>
+             <label>No<input type="radio" name="substance" class="substanceAbuse" value="No" /></label>
             </p>
+            <!-- END SUBSTANCE ABUSE (har, har) -->
           </section>
 
           <section>
@@ -120,7 +131,7 @@
 
         </form>
       </div>
- 
+
       <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
 
       <script src="shelter.js"></script>
