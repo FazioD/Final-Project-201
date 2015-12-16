@@ -77,21 +77,21 @@ $(document).ready(function() {
         e.preventDefault();
         if (x < max_fields) { //max input box allowed
             x++; //text box increment
-            $(wrapper).append("<div><label>First: </label><input type='text' name='mytext[]'><label>Last: </label><input type='text' name='mytext[]'></div></div>"); //add input box
+            $(wrapper).append("<div><label>First: </label><input type='text' name='mytext[]'><label>Last: </label><input type='text' name='mytext[]'><a href='#' class='remove_field'>Remove</a></div>"); //add input box
         }
     });
 
-    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+    $(wrapper).on("click",".remove_field", function(e) { //user click on remove text
         e.preventDefault(); $(this).parent('div').remove(); x--;
     });
 });
+
 //Adding event listener to submit children to childArray.
-$(function() {
-  $("#addChild").click(function() {
-    childArray.push($(".childName"));
-    console.log(childArray);
-  });
-});
+// $(function() {
+//   $("#addChild").click(function() {
+//     childArray.push
+//   });
+// });
 // ***************END CHILDREN SECTION***************** //
 
 //RADIO BUTTONS for "Are you in need of medical assistance."
