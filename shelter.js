@@ -86,7 +86,7 @@ $(document).ready(function() {
         e.preventDefault(); $(this).parent('div').remove(); x--;
     });
 });
-//add button create new class - grab class - iterate through array.
+
 //Adding event listener to submit children to childArray.
 $(function() {
   $("#addChild").on("click", function(e) {
@@ -106,8 +106,8 @@ $(function() {
       childArray.push(childFullName);
     }
 
+    //console.log(childArray);
 
-    console.log(childArray);
   });
 });
 
