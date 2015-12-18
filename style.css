@@ -160,8 +160,10 @@ th {
 	text-align: left;
 }
 
-
-
+a {
+	float: right;
+	padding-bottom:0%;
+}
 
 
 
