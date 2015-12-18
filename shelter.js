@@ -79,7 +79,7 @@ $(document).ready(function() {
         e.preventDefault();
         if (x < max_fields) { //max input box allowed
             x++; //text box increment
-            $(wrapper).append("<div id='kids'><label >First: </label><input type='text' class='childFirstName' name='mytext[]'><label>Last: </label><input type='text'  class='childLastName' name='mytext[]'><a href='#' class='remove_field'> REMOVE</a></div>"); //add input box
+            $(wrapper).append("<div id='kids'><label >First: </label><input type='text' class='childFirstName' name='mytext[]'><label> Last: </label><input type='text'  class='childLastName' name='mytext[]'><a href='#' class='remove_field'> REMOVE</a></div>"); //add input box
         }
     });
 
@@ -112,7 +112,7 @@ $(function() {
   });
 });
 
-//Displays child name results in table when submit is clicked.
+//Displays child name results in table when submit is clicked
 $(function() {
   var table = $("#childTable");
   $("#addChild").click(function(e) {
@@ -149,7 +149,3 @@ $(function() {
     substanceAbuse = false;
   });
 });
-
-//Submit Button Event Listener
-var newSubmitButton = document.getElementById("add-new-submit");
-newShopButton.addEventListener("click", handelSubmit);

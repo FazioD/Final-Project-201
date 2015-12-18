@@ -92,7 +92,7 @@
 
                 <section id="hiddenKids">
                   <!-- ****CHILDREN NAME AREA**** This are is hidden until the "yes" radio button is clicked.-->
-                  <fieldset>
+                  <fieldset id="namesInput">
                     <legend>Names:</legend>
                     <div class="input_fields_wrap">
                       <div id="kids">
@@ -108,7 +108,7 @@
                     <legend>Results:</legend>
                       <table border="1" style="max-width: 100%">
                         <tr>
-                          <th>Child's Name</th>
+                          <th>Childrens' Name</th>
                         </tr>
                         <tr>
                           <td id="childTable"></td>
@@ -142,8 +142,9 @@
           <section>
             <label>What brings you to the emergency shelter? The more details we know the better we can be of assistance. Please share with us specifics of what you need and how we can help. Please also let us know of any non emergency health issues.</label><textarea id="textArea" cols="155" rows="6">Enter your comments...</textarea>
           </section>
-          <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
-        </form>
+<!-- ****Submit button to link to 2nd page -->
+        <button id="add-new-submit" class="highlight"><a href="results.html">Submit</a></button>
+
       </div>
 
     </wrapper>
@@ -151,6 +152,7 @@
     <footer>
       <p>Rachel's place|1038 Beacon Ave Seattle WA,98134|206-867-5309|<a href="mailto:@example.com">admin@rachelsplace.com</a></p>
     </footer>
+
     <script src="shelter.js"></script>
   </body>
  <a href="https://developers.facebook.com/products/">Like us on Facebook</a>
