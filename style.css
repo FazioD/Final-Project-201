@@ -7,7 +7,7 @@ body {
 }
 
 figure {
-	background-image: url("treesmountains.jpeg");
+	/*background-image: url("images/scenery.jpeg");*/
 	padding-top: ;
 	text-align: center;
 }
@@ -178,7 +178,9 @@ th {
   border-color: #BFB999;
   font-family:'Arial', sans-serif;
   font-weight: bold;
-  padding-top: 8px;
+  padding: 8px 5px 0 5px;
+  width: 55px;
+  border: 1px solid;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
