@@ -3,28 +3,22 @@
 var savedDate = $("#date");
 //IN DANGER
 var inDanger = false;
-//NAME SECTION
-var firstName = $("#firstName");
-var lastName = $("#lastName");
-var middleName = $("#middle");
-var maidenName = $("#maiden");
-//ADDRESS SECTION
-var address1 = $("#address1");
-var address2 = $("#address2");
-var city = $("#city");
-var state = $("#state");
-var address = Number($("#zipCode"));
-//CHILDREN SECTION
-var children = false;
-var childsFirst = $(".firstNames");
-var childsSecond = $(".lastNames");
-var childArray = [];
 //MEDICAL CARE
 var medicalCare = false;
 //SUBSTANCE ABUSE SECTION
 var substanceAbuse = false;
 //ADDITIONAL INFORMATION
 var info = $("#textArea");
+//CHILDREN ARRAY
+var childArray = [];
+
+//CREATING OBJECTS//
+// ******NAME OBJECT******* //
+var nameObject = {firstName:$("#firstName"), lastName:$("#lastName"), middleName:$("#middleName"), maidenName:$("#maiden")};
+//*******ADDRESS OBJECT********//
+var addressObject = {address1:$("#address1"), address2:$("#address2"), city:$("city"), state:$("state"), address:Number($("#zipCode"))};
+//***********CHILDREN OBJECT*********//
+var childrenObject = {children:false, childsFirst:$(".firstNames"), childsSecond:$(".lastNames")};
 
 //Radio Button for finding out if the client is in danger.
 $(function() {
