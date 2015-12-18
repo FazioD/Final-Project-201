@@ -3,35 +3,29 @@
 var savedDate = $("#date");
 //IN DANGER
 var inDanger = false;
-//NAME SECTION
-var firstName = $("#firstName");
-var lastName = $("#lastName");
-var middleName = $("#middle");
-var maidenName = $("#maiden");
-//ADDRESS SECTION
-var address1 = $("#address1");
-var address2 = $("#address2");
-var city = $("#city");
-var state = $("#state");
-var address = Number($("#zipCode"));
-//CHILDREN SECTION
-var children = false;
-var childsFirst = $(".firstNames");
-var childsSecond = $(".lastNames");
-var childArray = [];
 //MEDICAL CARE
 var medicalCare = false;
 //SUBSTANCE ABUSE SECTION
 var substanceAbuse = false;
 //ADDITIONAL INFORMATION
 var info = $("#textArea");
+//CHILDREN ARRAY
+var childArray = [];
+
+//CREATING OBJECTS//
+// ******NAME OBJECT******* //
+var nameObject = {firstName:$("#firstName"), lastName:$("#lastName"), middleName:$("#middleName"), maidenName:$("#maiden")};
+//*******ADDRESS OBJECT********//
+var addressObject = {address1:$("#address1"), address2:$("#address2"), city:$("city"), state:$("state"), address:Number($("#zipCode"))};
+//***********CHILDREN OBJECT*********//
+var childrenObject = {children:false, childsFirst:$(".firstNames"), childsSecond:$(".lastNames")};
 
 //Radio Button for finding out if the client is in danger.
 $(function() {
   $("#yesDanger").click(function() {
     inDanger = true;
     console.log("Client is in danger, call 911");
-    $("#alert").html("Call 911");
+    $("#alert").html("Call 911 immediately");
   });
   $("#noDanger").click(function() {
     inDanger = false;
@@ -66,10 +60,11 @@ $(function() {
     }
   });
 });
-var x = 0;
+
 //Writes new data and input forms.
+var x = 0;
 $(document).ready(function() {
-    var max_fields = 10; //maximum input boxes allowed
+    var max_fields = 5; //maximum input boxes allowed
     var wrapper = $(".input_fields_wrap"); //Fields wrapper
     var add_button = $(".add_field_button"); //Add button ID
 
@@ -78,7 +73,7 @@ $(document).ready(function() {
         e.preventDefault();
         if (x < max_fields) { //max input box allowed
             x++; //text box increment
-            $(wrapper).append("<div id='kids'><label >First: </label><input type='text' class='childFirstName' name='mytext[]'><label>Last: </label><input type='text'  class='childLastName' name='mytext[]'><a href='#' class='remove_field'> x</a></div>"); //add input box
+            $(wrapper).append("<div id='kids'><label >First: </label><input type='text' class='childFirstName' name='mytext[]'><label> Last: </label><input type='text'  class='childLastName' name='mytext[]'><a href='#' class='remove_field'> REMOVE</a></div>"); //add input box
         }
     });
 
@@ -97,7 +92,7 @@ $(function() {
     //childFirstName.forEach(function(x) {console.log(x)})
     var childLastName = $(".childLastName");
     //open for loop
-    console.log('CHILDFIRSTNAME', childFirstName);
+    //console.log('CHILDFIRSTNAME', childFirstName);
 
     for (var i = 0; i < childFirstName.length; i++) {
       var firstName = childFirstName[i].value;
@@ -106,8 +101,20 @@ $(function() {
       childArray.push(childFullName);
     }
 
-    //console.log(childArray);
+    console.log(childArray);
 
+  });
+});
+
+//Displays child name results in table when submit is clicked
+$(function() {
+  var table = $("#childTable");
+  $("#addChild").click(function(e) {
+    $("#kidResults").css("display", "inline");
+    e.preventDefault();
+    for (var i = 0; i < childArray.length; i++) {
+      $(table).append(childArray[i] + " " + "</br>");
+    }
   });
 });
 
@@ -136,7 +143,3 @@ $(function() {
     substanceAbuse = false;
   });
 });
-
-// //Submit Button Event Listener
-// var newSubmitButton = document.getElementById("add-new-submit");
-// newShopButton.addEventListener("click", handelSubmit);

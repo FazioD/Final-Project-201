@@ -7,7 +7,7 @@ body {
 }
 
 figure {
-	background-image: url("treesmountains.jpeg");
+	/*background-image: url("images/scenery.jpeg");*/
 	padding-top: ;
 	text-align: center;
 }
@@ -15,6 +15,19 @@ figure {
 section {
   border: #B1BEA4 1px;
 }
+
+/* STYLING FOR THE 911 ALERT */
+#alert {
+  color: red;
+  font-weight: bold;
+  animation: blinker 1s linear infinite;
+  text-align: center;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+/* END ALERT STYLING */
 
 #childNames {
   list-style: none;
@@ -32,28 +45,6 @@ h1 {
 
 footer {
 	text-align: center;
-}
-
-button {
-  color: #6699ff;
-  background-color: #ccffff;
-  border-color: #BFB999;
-  font-family:'Arial', sans-serif;
-  font-weight: bold;
-  padding-top: 8px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-#add-new-submit:hover {
- cursor: pointer;
- transform: rotateX(360deg);
-}
-
-.highlight:hover{
-  background-color: #BFB999;
-  color: #000D0C;
 }
 
 blockquote {
@@ -84,6 +75,10 @@ input {
 
 
 #hiddenKids {
+  display: none;
+}
+
+#kidResults {
   display: none;
 }
 
@@ -166,7 +161,41 @@ th {
 
 
 #kids {
-
   text-decoration: none;
 }
 
+.add_field_button {
+  margin-left: 45px;
+}
+
+#namesInput, #kidResults {
+  width: 465px;
+}
+
+#add-new-submit {
+  color: #6699ff;
+  background-color: #ccffff;
+  border-color: #BFB999;
+  font-family:'Arial', sans-serif;
+  font-weight: bold;
+  padding: 8px 5px 8px 5px;
+  width: 55px;
+  border: 1px solid;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#add-new-submit a {
+  text-decoration: none;
+}
+
+#add-new-submit:hover {
+ cursor: pointer;
+ transform: rotateX(360deg);
+}
+
+.highlight:hover{
+  background-color: #BFB999;
+  color: #000D0C;
+}
