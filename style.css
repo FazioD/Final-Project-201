@@ -16,6 +16,19 @@ section {
   border: #B1BEA4 1px;
 }
 
+/* STYLING FOR THE 911 ALERT */
+#alert {
+  color: red;
+  font-weight: bold;
+  animation: blinker 1s linear infinite;
+  text-align: center;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+/* END ALERT STYLING */
+
 #childNames {
   list-style: none;
 }
@@ -34,7 +47,7 @@ footer {
 	text-align: center;
 }
 
-button {
+#add-new-submit {
   color: #6699ff;
   background-color: #ccffff;
   border-color: #BFB999;
@@ -84,6 +97,10 @@ input {
 
 
 #hiddenKids {
+  display: none;
+}
+
+#kidResults {
   display: none;
 }
 
@@ -166,7 +183,9 @@ th {
 
 
 #kids {
-
   text-decoration: none;
 }
 
+.add_field_button {
+  margin-left: 45px;
+}

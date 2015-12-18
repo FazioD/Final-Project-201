@@ -91,19 +91,32 @@
                 </section>
 
                 <section id="hiddenKids">
-                  <!-- ****CHILDREN NAME AREA**** -->
+                  <!-- ****CHILDREN NAME AREA**** This are is hidden until the "yes" radio button is clicked.-->
                   <fieldset>
                     <legend>Names:</legend>
                     <div class="input_fields_wrap">
-                      <button class="add_field_button">Add Child</button>
                       <div id="kids">
                         <label>First: </label><input class="childFirstName" type="text" name="mytext[]">
                         <label>Last: </label><input class="childLastName" type="text" name="mytext[]"></div>
                     </div>
+                     <button class="add_field_button">Add Child</button>
                      <input type="submit" id="addChild" name="submit" value="Submit" />
                   </fieldset>
+
+                  <!-- Printing names of children here -->
+                  <fieldset id="kidResults">
+                    <legend>Results:</legend>
+                      <table border="1" style="max-width: 100%">
+                        <tr>
+                          <th>Child's Name</th>
+                        </tr>
+                        <tr>
+                          <td id="childTable"></td>
+                        </tr>
+                      </table>
+                  </fieldset>
                   <!-- ****END CHILD NAME AREA**** -->
-              </section>
+                </section>
             </fieldset>
             <!-- END CHILDREN AREA -->
           </section>
@@ -129,7 +142,7 @@
           <section>
             <label>What brings you to the emergency shelter? The more details we know the better we can be of assistance. Please share with us specifics of what you need and how we can help. Please also let us know of any non emergency health issues.</label><textarea id="textArea" cols="155" rows="6">Enter your comments...</textarea>
           </section>
-
+          <button id="add-new-submit" type="button" class="highlight">Submit</button><br/>
         </form>
       </div>
 
