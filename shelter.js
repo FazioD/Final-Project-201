@@ -37,7 +37,6 @@ $(function() {
 //Inputs for Full Name Section in HTML is at this location.
 //Input for Last Known Address in HTML is at this location.
 
-// *************** CHILDREN SECTION: BOBBY **************** //
 //RADIO BUTTONS for children section.
 $(function() {
   $("#yesKids").click(function() {
