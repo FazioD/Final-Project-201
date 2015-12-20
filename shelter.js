@@ -133,7 +133,6 @@ $(function() {
   });
 });
 
-
 //DOES NOT WORK YET*****************!!!!!!!!!!!!!!!////
 $(function() {
   $("#medicalCare [type=radio]").click(function() {
@@ -144,6 +143,7 @@ $(function() {
     }
   });
 });
+
 //RADIO BUTTONS for the "Would you like to speak with one of our..."
 $(function() {
   $("#yesAbuse").click(function() {
