@@ -7,7 +7,6 @@ body {
 }
 
 figure {
-	/*background-image: url("images/scenery.jpeg");*/
 	padding-top: ;
 	text-align: center;
 }
@@ -22,6 +21,10 @@ section {
   font-weight: bold;
   animation: blinker 1s linear infinite;
   text-align: center;
+}
+
+#medicalCare {
+  display: none;
 }
 
 @keyframes blinker {

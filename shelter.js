@@ -1,4 +1,4 @@
-//Global Scope Variables.
+// ********** Global Scope Variables.************* //
 //DATE
 var savedDate = $("#date");
 //IN DANGER
@@ -9,8 +9,6 @@ var medicalCare = false;
 var substanceAbuse = false;
 //ADDITIONAL INFORMATION
 var info = $("#textArea");
-//CHILDREN ARRAY
-var childArray = [];
 
 //CREATING OBJECTS//
 // ******NAME OBJECT******* //
@@ -19,6 +17,9 @@ var nameObject = {firstName:$("#firstName"), lastName:$("#lastName"), middleName
 var addressObject = {address1:$("#address1"), address2:$("#address2"), city:$("city"), state:$("state"), address:Number($("#zipCode"))};
 //***********CHILDREN OBJECT*********//
 var childrenObject = {children:false, childsFirst:$(".firstNames"), childsSecond:$(".lastNames")};
+
+//CHILDREN ARRAY
+var childArray = [];
 
 //Radio Button for finding out if the client is in danger.
 $(function() {
@@ -124,6 +125,7 @@ $(function() {
   $("#yesCare").click(function() {
     console.log("Client needs medical care.");
     medicalCare = true;
+
   });
   $("#noCare").click(function() {
     console.log("Client does not need medical care.");
@@ -131,6 +133,17 @@ $(function() {
   });
 });
 
+
+//DOES NOT WORK YET*****************!!!!!!!!!!!!!!!////
+$(function() {
+  $("#medicalCare [type=radio]").click(function() {
+    if (medicalCare) {
+      $("#medicalCare").css("display", "inline");
+    } else {
+      $("#medicalCare").css("display", "none");
+    }
+  });
+});
 //RADIO BUTTONS for the "Would you like to speak with one of our..."
 $(function() {
   $("#yesAbuse").click(function() {
