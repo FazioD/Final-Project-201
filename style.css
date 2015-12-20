@@ -158,6 +158,7 @@ th {
 	text-align: left;
 }
 
+<<<<<<< HEAD
 .remove_field {
   text-decoration: none;
 }
@@ -191,6 +192,16 @@ th {
 
 #add-new-submit a {
   text-decoration: none;
+=======
+a {
+	float: right;
+	padding-bottom:0%;
+
+}
+
+#mapInt {
+	
+>>>>>>> stylebranch
 }
 
 #add-new-submit:hover {
