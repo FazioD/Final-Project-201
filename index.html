@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+
+    <title>Rachel's Place</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <wrapper>
+      <div id="heading">
+        <figure>
+
+      <img src="images/scenery.jpeg" alt= "Washington scenery"/>
+
+        <h1>Welcome to Rachel's Place<br />Emergency Shelter for Women & Children</h1>
+        </sfigure>
+        <blockquote>"There is some good in this world, and it's worth fighting for." -J.R.R. Tolkien</blockquote>
+      </div>
+
+      <div id="missionStatement">
+        <p>We provide emergency shelter for women and children. <br /> We offer support on a case by case basis and our guests can expect:</p>
+        <ul>
+          <li>a safe place to sleep</li>
+          <li>warm, nutritional food</li>
+          <li>community resources</li>
+          <li>clothes washing</li>
+          <li>warm shower</li>
+          <li>crisis counseling</li>
+        </ul>
+        <p>Our emergency shelter is an entry point to a more wholistic community outreach. We keep our guest's information confidential.<br />Our guests can expect to sleep in a secured environment.</p>
+      </div>
+
+      <div id="form">
+        <form id="entryForm" method="post">
+
+          <section>
+            <!-- DATE SECTION -->
+            <p>Date:
+              <input type="date" name="date" id="date" />
+            </p>
+            <!-- DATE ENDS -->
+          </section>
+
+          <section id="inDanger">
+            <!-- DANGER BUTTONS -->
+            <p>Is the client in imminent danger?
+              <label>Yes<input type="radio" name="danger" id="yesDanger" value="Yes" /></label>
+              <label>No<input type="radio" name="danger" id="noDanger" value="No" /></label></p>
+              <p id="alert"></p>
+              <!-- END DANGER BUTTONS -->
+          </section>
+
+
+          <section >
+
+            <!-- NAME INPUT AREA -->
+
+            <a href="seattlemap.jpg" id="seattleMap"/>
+                <img src="http://wikitravel.org/upload/shared//thumb/f/fa/Seattle_overview_v3.png/350px-Seattle_overview_v3.png" alt="Seattle Map" width="355" height="565" />
+              </a>
+
+            <fieldset>
+              <legend>Full Name:</legend>
+              <p><label class="field" for="First">First: <input type="text" name="name" id="firstName" /><label></p>
+              <p><label class="field" for="Last">Last: <input type="text" name="name" id="lastName" /></label></p>
+              <p><label class="field" for="Middle">Middle: <input type="text" name="name" id="middle" /></label></p>
+              <p><label class="field" for="Maiden">Maiden: <input type="text" name="name" id="maiden" /></label></p>
+              <!-- END NAME AREA -->
+            </fieldset>
+
+          </section>
+
+          <section>
+            <!-- ADDRESS AREA -->
+            <fieldset>
+            <legend>Last Known Address:</legend>
+                <p><label class="field" for="Address1">Address 1: <input type="text" name="address1" id="address1" /></label></p>
+                <p><label class="field" for="Address2">Address 2:<input type="text" name="address2" id="address2" /></label></p>
+                <p><label class="field" for="City">City: <input type="text" name="city" id="city" /></label></p>
+                <p><label class="field" for="State">State: <input type="text" name="state" id="state" /></label></p>
+                <p><label class="field" for="Zipcode">Zipcode: <input type="number" name="zipcode" id="zipcode" /></label></p>
+            </fieldset>
+            <!-- END ADDRESS AREA -->
+          </section>
+
+          <section>
+            <!-- CHILDREN AREA -->
+            <fieldset>
+              <legend>Children:</legend>
+
+                <section id="kids">
+                  <!-- CHILDREN RADIO BUTTONS -->
+                 <label>Yes<input type="radio" name="children" id="yesKids" value="Yes" /></label>
+                 <label>No<input type="radio" name="children" id="noKids" value="No" /></label>
+                 <!-- RADIO BUTTON END -->
+                </section>
+
+                <section id="hiddenKids">
+                  <!-- ****CHILDREN NAME AREA**** This are is hidden until the "yes" radio button is clicked.-->
+                  <fieldset id="namesInput">
+                    <legend>Names:</legend>
+                    <div class="input_fields_wrap">
+                      <div id="kids">
+                        <label>First: </label><input class="childFirstName" type="text" name="mytext[]">
+                        <label>Last: </label><input class="childLastName" type="text" name="mytext[]"></div>
+                    </div>
+                     <button class="add_field_button">Add Child</button>
+                     <input type="submit" id="addChild" name="submit" value="Submit" />
+                  </fieldset>
+
+                  <!-- Printing names of children here -->
+                  <fieldset id="kidResults">
+                    <legend>Results:</legend>
+                      <table border="1" style="max-width: 100%">
+                        <tr>
+                          <th>Childrens' Names</th>
+                        </tr>
+                        <tr>
+                          <td id="childTable"></td>
+                        </tr>
+                      </table>
+                  </fieldset>
+                  <!-- ****END CHILD NAME AREA**** -->
+                </section>
+            </fieldset>
+            <!-- END CHILDREN AREA -->
+          </section>
+
+          <section>
+            <!-- MEDICAL SECTION -->
+            <p id="medicalAid">Are you in need of medical care?
+             <label>Yes<input type="radio" name="medical" class="medicalCare" value="Yes" /></label>
+             <label>No<input type="radio" name="medical" class="medicalCare" value="No" /></label>
+            </p>
+            <p id="medicalCare">
+              <label>Please specify the type of care needed: <input id="aidType"></input></label>
+            </p>
+            <!-- END MEDICAL SECTION -->
+          </section>
+
+          <section>
+            <!-- SUBSTANCE ABUSE SECTION -->
+            <p>Would you like to speak with one of our substance abuse counselors?
+             <label>Yes<input type="radio" name="substance" class="substanceAbuse" value="Yes" /></label>
+             <label>No<input type="radio" name="substance" class="substanceAbuse" value="No" /></label>
+            </p>
+            <!-- END SUBSTANCE ABUSE (har, har) -->
+          </section>
+
+          <section>
+            <label>What brings you to the emergency shelter? The more details we know the better we can be of assistance. Please share with us specifics of what you need and how we can help. Please also let us know of any non emergency health issues.</label><textarea id="textArea" cols="155" rows="6">Enter your comments...</textarea>
+          </section>
+<!-- ****Submit button to link to 2nd page -->
+        <div id="add-new-submit" class="highlight"><a href="results.html">Submit</a></div>
+
+      </div>
+
+    </wrapper>
+
+    <iframe id="mapInt"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5378.266893017362!2d-122.33591690000004!3d47.6235372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153758c88a61%3A0xe3d3fd29c55db518!2sCode+Fellows+-+Seattle+Campus!5e0!3m2!1sen!2sus!4v1450413761002" width="500" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<footer>
+    <p>Rachel's place|1038 Beacon Ave Seattle WA,98134|206-867-5309|<a href="mailto:@example.com">admin@rachelsplace.com</a></p>
+</footer>
+
+    <script src="shelter.js"></script>
+  </body>
+
+ <a href="https://developers.facebook.com/products/">Like us on Facebook</a>
+
+</html>
+

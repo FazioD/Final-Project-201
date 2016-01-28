@@ -1,0 +1,218 @@
+body {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #B1BEA4;
+	font-family: 'Nixie One', cursive;
+	font: #282828;
+}
+
+figure {
+	padding-top: ;
+	text-align: center;
+}
+
+section {
+  border: #B1BEA4 1px;
+}
+
+/* STYLING FOR THE 911 ALERT */
+#alert {
+  color: red;
+  font-weight: bold;
+  animation: blinker 1s linear infinite;
+  text-align: center;
+}
+
+#medicalCare {
+  display: none;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
+}
+/* END ALERT STYLING */
+
+#childNames {
+  list-style: none;
+}
+
+fieldset {
+  background-color: #CED59F;
+  width: 500px;
+}
+
+h1 {
+	text-align: center;
+	color: #282828;
+}
+
+footer {
+	text-align: center;
+}
+
+blockquote {
+	float: right;
+	width: 275px;
+	font-size: 130%;
+	font-style: italic;
+	font-family: Georgia, Times, serif;
+	margin: 0px 0px 10px 10px;
+	padding: 10px;
+	color: #647168;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+a {
+	padding-bottom: 20px;
+	color: blue;
+}
+
+legend {
+  font-size: 20px;
+}
+
+input {
+  display: inline-block;
+}
+
+
+#hiddenKids {
+  display: none;
+}
+
+#kidResults {
+  display: none;
+}
+
+#firstName {
+	padding:5px 5px 5px 30px;
+	width: 245px;
+}
+
+#lastName {
+	padding:5px 5px 5px 30px;
+	width: 250px;
+}
+
+#middle {
+	padding:5px 5px 5px 30px;
+	width: 230px;
+}
+
+#maiden {
+	padding:5px 5px 5px 30px;
+	width: 225px;
+}
+
+#address1 {
+	padding:5px 5px 5px 30px;
+	width: 205px;
+}
+
+#address2 {
+	padding:5px 5px 5px 30px;
+	width: 205px;
+}
+
+#city {
+	padding:5px 5px 5px 30px;
+	width: 250px;
+}
+
+#state {
+	padding:5px 5px 5px 30px;
+	width: 240px;
+}
+
+#zipcode {
+	padding:5px 5px 5px 30px;
+	width: 220px;
+}
+
+#date {
+	padding:5px 5px 5px 30px;
+	width: 200;
+}
+
+/*resultscss*/
+
+table {
+
+}
+
+td {
+	letter-spacing: 0.1em;
+	font-size: 90%;
+	border-bottom: 1px solid;
+	border-top: 0px solid;
+	text-align: left;
+}
+
+th {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+	border-bottom: 1px solid;
+	border-top: 0px solid;
+	text-align: left;
+}
+
+.remove_field {
+  text-decoration: none;
+}
+
+
+#kids {
+  text-decoration: none;
+}
+
+.add_field_button {
+  margin-left: 45px;
+}
+
+#namesInput, #kidResults {
+  width: 465px;
+}
+
+#add-new-submit {
+  color: #6699ff;
+  background-color: #ccffff;
+  border-color: #BFB999;
+  font-family:'Arial', sans-serif;
+  font-weight: bold;
+  padding: 8px 5px 8px 5px;
+  width: 55px;
+  border: 1px solid;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#add-new-submit a {
+  text-decoration: none;
+}
+
+#seattleMap {
+  float: right;
+  padding-bottom: 0%;
+}
+
+#mapInt {
+  margin-top: 10px;
+  margin-left: 25%;
+}
+
+#add-new-submit:hover {
+ cursor: pointer;
+ transform: rotateX(360deg);
+}
+
+.highlight:hover{
+  background-color: #BFB999;
+  color: #000D0C;
+}
+
+/*RESULTS PAGE CSS */
+.resultspic {
+float: left;
